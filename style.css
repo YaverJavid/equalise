@@ -1,0 +1,96 @@
+@font-face {
+    font-family: lemon;
+    src: url("Lemon-Regular.ttf");
+}
+
+
+body {
+    font-size: 15pt;
+    background: linear-gradient(35deg,
+            rgba(255, 200, 249, 1) 25%,
+            #08E26A 25%,
+            #08E26A 71%,
+            rgba(0, 0, 0, 0) 71%,
+            rgba(69, 74, 187, 1) 71%,
+            rgba(69, 74, 187, 1) 100%);
+    height: 100vh;
+    background-size: 100% 100%;
+    font-family: lemon;
+    color: white;
+        text-align: center;
+
+}
+
+#playing-area {
+
+    display: flex;
+    gap: 1vw
+}
+
+#playing-area > div {
+    border: 1px solid white;
+    height: 65vh;
+    box-sizing: border-box
+}
+
+#throwing-board {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#numbers {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 1vw;
+    background: white;
+    overflow-x: hidden;
+
+}
+
+#numbers div {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewX(5deg);
+    background: #FFE800;
+    height: 65vh;
+    transition: 100ms
+}
+
+.toggled-number {}
+
+.selected-number{
+    border: 4px solid black;
+    background: red!important;
+}
+
+
+#dice1, #dice2{
+    padding: 25px;
+    position: absolute;
+    border: 4px solid white;
+    border-radius: 25px
+}
+
+#score-section{
+    margin:  25px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#give-up{
+    margin: 25px;
+    padding: 12.5px 25px;
+    background: none;
+    color: white;
+    border: 4px solid white;
+    font-family: lemon;
+    font-size: 1.3rem
+}
+
+ 
